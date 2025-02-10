@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "Poppins";
+}
+
+.mdc-text-field--outlined {
+  --mdc-outlined-text-field-outline-width: 1px;
+  --mdc-outlined-text-field-focus-outline-width: 2px;
+  --mdc-outlined-text-field-container-shape: 6px !important;
+
+  --mdc-outlined-text-field-focus-outline-color: #f1330d;
+  --mdc-outlined-text-field-focus-label-text-color: #dddddd;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  --mat-form-field-subscript-text-size: 10px;
+}
+
+.mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 14px !important;
+  background-color: #ffe8e8;
+}
+
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color:#dddddd !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading {
+    border-color:#dddddd !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch {
+    border-color:#dddddd !important;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 100%;
+    border-radius: 6px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

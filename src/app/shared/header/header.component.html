@@ -1,0 +1,17 @@
+<header>
+    <div class="logo" id="header-animation">Portfolio</div>
+    <nav>
+        <ul class="nav-links" id="header-animation">
+            <li><a style="cursor: pointer;" (click)="scrollTo('home')">Home</a></li>
+            <li><a style="cursor: pointer;" (click)="scrollTo('service')">Services</a></li>
+            <li><a style="cursor: pointer;" (click)="scrollTo('skills')">Skills</a></li>
+            <li><a style="cursor: pointer;" (click)="scrollTo('projects')">Projects</a></li>
+            <li><a style="cursor: pointer;" (click)="scrollTo('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="burger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
