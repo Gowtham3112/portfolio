@@ -1,6 +1,7 @@
-<div *ngIf="showContent" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg_color" [ngStyle]="{'background-image':'url(\'assets/Images/bg5.jpg\')',
+<div *ngIf="showContent" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg_color" [ngStyle]="{
     'background-size': 'cover', 
     'background-repeat': 'no-repeat'}">
+    <!-- background-image':'url(\'assets/Images/bg5.jpg\')', -->
 
     <div #homeSection></div>
     <div class="row justify-content-start align-items-start" id="column_fixed">
@@ -25,22 +26,19 @@
                 </span>
             </div>
 
-            <div class="down_cv mt-2" id="right_animation">
+            <!-- Service Move -->
+            <div #serviceSection></div>
+            <!--END  -->
 
+            <div class="down_cv mt-2" id="right_animation">
                 <a href="assets/Images/Gowtham's CV.pdf">
                     <button class="down_cv_button">Download CV</button>
                 </a>
-                <!-- <span><a href="assets/Images/Gowtham's CV.pdf" style="color:#40a1e2">Download CV</a></span> -->
             </div>
 
         </div>
-
-        <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 image-column" id="header-animation">
-            <img src="assets/Images/Gowtham.jpg" alt="Image" class="responsive-image">
-        </div> -->
     </div>
 
-    <div #serviceSection></div>
     <div class="content-slider" id="header-animation">
         <div class="content-wrapper" [style.transform]="getTransformStyle()">
             <div *ngFor="let content of contents" class="content-card">
@@ -48,10 +46,13 @@
                 <div class="content-details">
                     <h2>{{ content.title }}</h2>
                     <p>{{ content.description }}</p>
-                    <!-- <button class="read-more">{{ content.buttonText }}</button> -->
                 </div>
             </div>
         </div>
+
+        <!-- Skill Move -->
+        <div #skillsSection></div>
+        <!--END  -->
 
         <div class="pagination">
             <div *ngFor="let content of contents; let i = index" class="dot" [class.active]="i === currentIndex"
@@ -59,7 +60,6 @@
         </div>
     </div>
 
-    <div #skillsSection></div>
     <div class="row justify-content-center align-items-center">
 
         <div class="skills" id="skill_animation">
@@ -138,6 +138,10 @@
                             [labels]="TW_chart_per.labels"></apx-chart>
                     </div>
 
+                    <!-- Project Move -->
+                    <div #projectsSection></div>
+                    <!--END  -->
+
                     <div class="chartLabel">
                         <span>Team Work</span>
                     </div>
@@ -151,7 +155,6 @@
 
     </div>
 
-    <div #projectsSection></div>
     <div class="row justify-content-center align-items-center mt-2">
 
         <div class="skills" id="skill_animation">
@@ -193,7 +196,7 @@
                 </div>
 
                 <div class="project_head">
-                   Vedha Mattresses
+                    Vedha Mattresses
                 </div>
 
                 <div class="project_content">
@@ -337,7 +340,7 @@
 
                         <div>
                             <mat-form-field appearance="outline" style="width: 100%;">
-                                <input matInput placeholder="jacob@gmail.com" type="text" formControlName="mail">
+                                <input matInput placeholder="sgowthamprabhu98@gmail.com" type="text" formControlName="mail">
                             </mat-form-field>
                         </div>
                     </div>
